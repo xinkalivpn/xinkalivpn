@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xinkali — быстрый и стабильный доступ в интернет по подписке</title>
 <meta name="description" content="Xinkali — быстрый и стабильный доступ в интернет по подписке. Тарифы от 250 руб. Подключение за минуту через Telegram.">
-<link rel="icon" href="logo.jpg">
+<link rel="icon" href="logo.jpeg">
 <style>
   :root{
     --bg:#0a0612; --bg2:#120a22;
@@ -41,7 +41,7 @@
   .hero{position:relative;padding:70px 0 80px;text-align:center;overflow:hidden}
   .hero .wrap{position:relative;z-index:1}
   .hero:before{content:"";position:absolute;inset:0;z-index:-2;
-    background:url('hero-bg.jpg') center top/cover no-repeat;
+    background:url('hero-bg.jpeg') center top/cover no-repeat;
     opacity:.40;
     -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 38%,transparent 80%);
     mask-image:linear-gradient(to bottom,#000 0%,#000 38%,transparent 80%)}
@@ -112,8 +112,6 @@
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero img.hinkali,.hero .halo{animation:none}}
-
-  /* floating dumplings layer */
   .dumplings{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
   .dumplings img{position:absolute;width:90px;opacity:.12;filter:drop-shadow(0 0 14px rgba(150,80,255,.5));animation:drift 22s ease-in-out infinite}
   .dumplings img:nth-child(1){top:14%;left:6%;width:70px;animation-delay:0s}
@@ -125,8 +123,6 @@
   @keyframes drift{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-26px) rotate(4deg)}}
   @media(max-width:820px){.dumplings img{opacity:.05}.dumplings img:nth-child(2),.dumplings img:nth-child(4){display:none}}
   @media(prefers-reduced-motion:reduce){.dumplings img{animation:none}}
-
-  /* ===== advanced animations ===== */
   .sparks{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
   .spark{position:absolute;bottom:-10px;width:5px;height:5px;border-radius:50%;background:var(--violet-bright);box-shadow:0 0 10px var(--violet-bright);animation:rise linear infinite}
   @keyframes rise{0%{transform:translateY(0) scale(1);opacity:0}10%{opacity:.85}100%{transform:translateY(-100vh) scale(.3);opacity:0}}
@@ -140,7 +136,6 @@
   @keyframes drop{to{opacity:1;transform:none}}
   .dumplings img{animation:drift3d 16s ease-in-out infinite}
   @keyframes drift3d{0%,100%{transform:translateY(0) rotate(-6deg) scale(1)}50%{transform:translateY(-30px) rotate(6deg) scale(1.07)}}
-
   .status-badge{display:inline-flex;align-items:center;gap:9px;margin:0 auto 6px;padding:8px 16px;border:1px solid var(--panel-line);border-radius:999px;background:rgba(20,10,36,.6);font-size:13px;color:#cbbce6;backdrop-filter:blur(6px)}
   .status-badge .dot{width:9px;height:9px;border-radius:50%;background:#37d67a;box-shadow:0 0 10px #37d67a;animation:blink 2s ease-in-out infinite}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
@@ -160,7 +155,7 @@
 <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 <header>
   <div class="wrap bar">
-    <div class="logo"><img src="logo.jpg" alt="Xinkali"><span>Xinkali</span></div>
+    <div class="logo"><img src="logo.jpeg" alt="Xinkali"><span>Xinkali</span></div>
     <nav class="menu">
       <a href="#features">Возможности</a>
       <a href="#pricing">Тарифы</a>
@@ -175,7 +170,7 @@
   <section class="hero">
     <div class="halo"></div>
     <div class="wrap">
-      <img class="hinkali" src="logo.jpg" alt="Xinkali маскот">
+      <img class="hinkali" src="logo.jpeg" alt="Xinkali маскот">
       <div class="status-badge"><span class="dot"></span>Работает в России на <span id="todayDate">10 июня 2026</span></div>
       <div class="eyebrow">Доступ без границ · подписка</div>
       <h1 data-letters>Быстрый и стабильный <em>доступ в интернет</em>.</h1>
@@ -260,7 +255,7 @@
             <p>Настоящий документ является публичной офертой самозанятого Гаджиева Тимура Теймуразовича (плательщик налога на профессиональный доход, ИНН 780730541595), далее — «Исполнитель», и содержит существенные условия предоставления доступа к сервису Xinkali.</p>
             <p>В соответствии со ст. 437 Гражданского кодекса РФ настоящая Оферта является официальным предложением заключить договор на изложенных ниже условиях. Полным и безоговорочным акцептом считается оформление и оплата подписки через Telegram-бот @vpn_xinkali_bot.</p>
             <h3>2. Предмет договора</h3>
-            <p>Исполнитель предоставляет Пользователю на возмездной основе доступ к сервису Xinkali — программному сервису, обеспечивающему защищённое сетевое соединение  для доступа в сеть Интернет, на срок, соответствующий выбранному тарифу.</p>
+            <p>Исполнитель предоставляет Пользователю на возмездной основе доступ к сервису Xinkali — программному сервису, обеспечивающему защищённое сетевое соединение для доступа в сеть Интернет, на срок, соответствующий выбранному тарифу.</p>
             <h3>3. Стоимость и порядок оплаты</h3>
             <p>Стоимость определяется выбранным тарифом и указывается в боте на момент оформления. Оплата производится единовременно за выбранный период доступными способами, включая Систему быстрых платежей (СБП). После поступления оплаты Пользователю предоставляется доступ и ссылка для подключения.</p>
             <h3>4. Права и обязанности сторон</h3>
@@ -339,32 +334,26 @@
 <script>
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
   (function(){const el=document.getElementById('todayDate');if(!el)return;
     const m=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
     const d=new Date();el.textContent=d.getDate()+' '+m[d.getMonth()]+' '+d.getFullYear();})();
-
-
   (function(){const f=document.getElementById('sparks');if(!f)return;
     const N=window.innerWidth<820?22:42;
     for(let i=0;i<N;i++){const s=document.createElement('div');s.className='spark';
       s.style.left=Math.random()*100+'%';s.style.animationDuration=(5+Math.random()*6)+'s';
       s.style.animationDelay=(-Math.random()*10)+'s';s.style.opacity=Math.random()*.7+.2;
       const sz=3+Math.random()*4;s.style.width=s.style.height=sz+'px';f.appendChild(s)}})();
-
   (function(){const g=document.getElementById('cursorGlow');if(!g)return;
     function mv(x,y){g.style.left=x+'px';g.style.top=y+'px';g.style.opacity='1'}
     window.addEventListener('mousemove',e=>mv(e.clientX,e.clientY));
     window.addEventListener('touchmove',e=>{const t=e.touches[0];mv(t.clientX,t.clientY)},{passive:true});
     window.addEventListener('mouseleave',()=>g.style.opacity='0');})();
-
   (function(){const els=document.querySelectorAll('[data-count]');if(!els.length)return;
     const co=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
       const el=e.target;const target=+el.dataset.count;let n=0;const step=Math.max(1,Math.round(target/40));
       const t=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(t)}el.textContent=n},20);
       co.unobserve(el)}})},{threshold:.6});
     els.forEach(el=>co.observe(el));})();
-
   (function(){const tilt=document.querySelector('.hero .hinkali');const wrap=document.querySelector('.hero');if(!tilt||!wrap)return;
     function tm(x,y){const r=tilt.getBoundingClientRect();const cx=r.left+r.width/2,cy=r.top+r.height/2;
       const dx=(x-cx)/r.width,dy=(y-cy)/r.height;
@@ -373,7 +362,6 @@
     wrap.addEventListener('mousemove',e=>tm(e.clientX,e.clientY));
     wrap.addEventListener('touchmove',e=>{const t=e.touches[0];tm(t.clientX,t.clientY)},{passive:true});
     wrap.addEventListener('mouseleave',()=>tilt.style.transform='');})();
-
   (function(){const els=document.querySelectorAll('[data-letters]');if(!els.length)return;
     const lo=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
       const el=e.target;const frag=document.createDocumentFragment();let idx={v:0};
